@@ -29,7 +29,14 @@ public:
 	}
 	void push(E element) {
 		if (top == max) {
-			throw runtime_error("Stack overflow.");
+			E* temp = new E[max * 2];
+			for (i = 0; i < max; i++) {
+				temp[i] = elements[i];
+			}
+			delete[] elements;
+			elements = temp;
+			delete[] temp;
+			max = max * 2;
 		}
 		elements[top] = element;
 		top++;
