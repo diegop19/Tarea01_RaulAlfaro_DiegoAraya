@@ -131,6 +131,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ArrayStack.h" />
+    <ClInclude Include="Calculator.h" />
     <ClInclude Include="LinkedStack.h" />
     <ClInclude Include="Node.h" />
     <ClInclude Include="Stack.h" />
